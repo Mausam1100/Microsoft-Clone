@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .width {
+        width: 93%;
+        margin-inline: auto;
+        max-width: 1575px;
+    }
+
+    .width2 {
+        width: 95%;
+        margin-inline: auto;
+        max-width: 1575px;
+    }
+
+    .inside-hero {
+        @apply hidden max-w-[650px] mx-auto bg-white px-6 pt-6 pb-5 space-y-3 drop-shadow-lg
+    }
+}
+
+@layer utilities {
+    .hide {
+        filter: opacity(0) !important;
+    }
+
+    .show {
+        filter: opacity(1) !important;
+        transition: filter .8s ease-in;
+    }
+}
